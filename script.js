@@ -7,11 +7,28 @@ function promptChoice() {
   console.log(lowerCaseChoice);
 }
 
-for (let i = 0; i < 5; i++) {
-  promptChoice();
+//computerChoice function/ random number function/num to choice function
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-//computerChoice function/ random number function/num to choice function
+let computerChoice;
+
+for (let i = 0; i < 5; i++) {
+  let num = getRandomIntInclusive(1, 3);
+
+  if (num == 1) {
+    computerChoice = "rock";
+  } else if (num == 2) {
+    computerChoice = "paper";
+  } else {
+    computerChoice = "scissors";
+  }
+  promptChoice();
+  console.log(computerChoice);
+}
 
 //playRound function/ else if branches for computerChoice/playerChoice
 

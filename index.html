@@ -3,9 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      * {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .under-header {
+        margin-top: -20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+      }
+
+      .score {
+        margin-top: 20px;
+      }
+
+      .resetbtn {
+        margin-top: 20px;
+      }
+
+    </style>
+
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+    <h3> ✌️✋👊 MAKE YOUR CHOICE 👊✋✌️</h3>
+    <p class="under-header">(First to 3 wins)</p>
+    <div class="btn-container">
+      <button class="rock">Rock</button>
+      <button class="paper">Paper</button>
+      <button class="scissors">Scissors</button>
+    </div>
+    <div class="score">
+      Player Score = 0, Computer Score = 0
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
